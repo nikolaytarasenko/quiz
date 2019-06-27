@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="app" class="app">
+        <header class="app__header">
+            <a href="./" class="app__link">
+                <h1 class="app__title">Quiz</h1>
+            </a>
+        </header>
+        <div class="app__quiz">
+            <div class="app__welcome">
+                <p class="app__message">Нажмите "Начать" для начала опроса.</p>
+                <button class="app__start">Начать</button>
+            </div>
+            <fieldset class="app__field js-hide">
+                <legend class="app__legend"></legend>
+                <form class="app__form question">
+                    <h3 class="question__title">Вопрос номер один:</h3>
+                    <label class="question__label">
+                        <input type="radio" name="answer" class="question__input">
+                    </label>
+                    <label class="question__label">
+                        <input type="radio" name="answer" class="question__input">
+                    </label>
+                    <label class="question__label">
+                        <input type="radio" name="answer" class="question__input">
+                    </label>
+                    <label class="question__label">
+                        <input type="radio" name="answer" class="question__input">
+                    </label>
+                    <input type="submit" class="question__button" value="Ответить">
+                </form>
+            </fieldset>
+            <div class="app__result result js-hide">
+                <div class="result__right"></div>
+                <div class="result__all"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

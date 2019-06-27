@@ -1,0 +1,105 @@
+html,
+body {
+    height: 100%;
+    background: #141E30;
+    background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
+    background: linear-gradient(to bottom, #243B55, #141E30);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+.app__header {
+    padding: 30px 0;
+}
+
+.app__link,
+.app__link:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.app__title {
+    margin: 0;
+    text-align: center;
+}
+
+.app__quiz {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.app__welcome {
+    text-align: center;
+}
+
+.app__field {
+    border: 1px solid #fff;
+    padding: 1rem 2rem 2rem;
+}
+
+.question__title {
+    font-weight: 500;
+}
+
+.question__label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.question__label:hover {
+    background: rgba(150, 150, 150, 0.58);
+}
+
+.question__label.js-active {
+    background: #3c9052;
+}
+
+.question__input {
+    margin-top: 0;
+    margin-right: 6px;
+}
+
+.question__button,
+.app__start {
+    margin-top: 20px;
+    border: 0;
+    background: #4aa75e;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 20px;
+    line-height: 1;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    transition: 0.2s;
+}
+
+.question__button:hover,
+.app__start:hover {
+    background: #328844;
+}
+
+.question__button:focus,
+.app__start:focus {
+    outline: 0;
+}
+
+.app__result {
+    background: #487faf;;
+    padding: 40px;
+}
+
+.js-hide {
+    display: none;
+}
